@@ -11,7 +11,7 @@ server:
 spring:
   profiles: dev
   application:
-    name: microservicecloud-config-dept-1                                            #对外暴露的微服务名字,注册到eureka时就是这个名字的大写
+    name: microservicecloud-config-dept-client                                            #对外暴露的微服务名字,注册到eureka时就是这个名字的大写
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: org.gjt.mm.mysql.Driver
@@ -32,7 +32,7 @@ mybatis:
 eureka:
   client:                                                                     #将当前服务注册进eureka服务列表
     service-url:
-      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka,http://eureka7003.com:7003/eureka                               #eureka所在的URL,和eureka server中配置的要一致
+      defaultZone: http://eureka7001.com:7001/eureka                          #eureka所在的URL,和eureka server中配置的要一致
   instance:
     instance-id: microservicecloud-dept8001                                   #eureka的status栏所显示的内容
     prefer-ip-address: true                                                   #eureka的status栏每一项鼠标放上去链接会显示IP

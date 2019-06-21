@@ -1,0 +1,20 @@
+spring:
+  profiles:
+    active:
+      -dev
+---
+#开发环境
+spring:
+  profiles: dev
+  application:
+    name: microservicecloud-config-fudan-dev
+
+---
+#测试环境
+spring:
+  profiles: test
+  application:
+    name: microservicecloud-config-fudan-test
+
+#注意，修改后必须保存为UTF-8后再提交到GitHub
+    

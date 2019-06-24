@@ -37,9 +37,10 @@ eureka:
     instance-id: myspringcloud-service-a-8001                                   #eureka的status栏所显示的内容
     prefer-ip-address: true                                                   #eureka的status栏每一项鼠标放上去链接会显示IP
 
-feign:
-  hystrix:
-    enabled: true
+#开启hystrix,可能会看不到异常
+#feign:
+#  hystrix:
+#    enabled: true
 
 info:
   app.name: fudan-microservicecloud
